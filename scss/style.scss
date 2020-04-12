@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai+2&display=swap');
+
+$background : #F50057;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Baloo Bhai 2', cursive;
+}
+
+body {
+  text-align: center;
+
+}
+
+header {
+  background-color: $background;
+  font-size: 16px;
+  padding: 0.3rem;
+  color: white;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  column-gap: 5px;
+  padding: 1rem 1rem;
+}
+
+
+form {
+  width: 45vw;
+  margin: auto;
+  padding: 1rem 2rem;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.35);
+
+  label {
+    display: block;
+    text-align: left;
+    font-size: 18px;
+  }
+
+  input[type=number] {
+    width: 100%;
+    padding: 8px 20px;
+    margin: 8px 0;
+    border: 2px solid red;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+
+  select {
+    width: 100%;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    color: $background;
+    font-size: 16px;
+    background-color: #f1f1f1;
+  }
+
+  button {
+    background-color: $background;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    font-size: 16px;
+    margin: 1rem 2px;
+    transition-duration: 0.6s;
+    cursor: pointer;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: white;
+      color: $background;
+      font-size: 19px;
+      border: 2px solid $background;
+    }
+  }
+}
+
+.estimatedDisplay {
+  margin: 1rem auto 1rem;
+  padding: 0 1rem;
+}
+
+@media screen and (max-width: 480px) {
+
+  .main {
+    display: block;
+
+    form {
+      width: 90vw;
+    }
+
+    .data {
+      margin: 2rem auto;
+    }
+  }
+
+  .estimatedDisplay {
+    margin: 0rem auto 1rem;
+    padding: 0 1rem;
+  }
+}
+
+#dataDisplayer {
+  width: 90%;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 8px 20px;
+  border: 2px solid red;
+  border-radius: 4px;
+}

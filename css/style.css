@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo+Bhai+2&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Baloo Bhai 2', cursive;
+}
+
+body {
+  text-align: center;
+}
+
+header {
+  background-color: #F50057;
+  font-size: 16px;
+  padding: 0.3rem;
+  color: white;
+}
+
+.main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
+  padding: 1rem 1rem;
+}
+
+form {
+  width: 45vw;
+  margin: auto;
+  padding: 1rem 2rem;
+  -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.35);
+          box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.35);
+}
+
+form label {
+  display: block;
+  text-align: left;
+  font-size: 18px;
+}
+
+form input[type=number] {
+  width: 100%;
+  padding: 8px 20px;
+  margin: 8px 0;
+  border: 2px solid red;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+form select {
+  width: 100%;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  color: #F50057;
+  font-size: 16px;
+  background-color: #f1f1f1;
+}
+
+form button {
+  background-color: #F50057;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  font-size: 16px;
+  margin: 1rem 2px;
+  -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+form button:hover {
+  background-color: white;
+  color: #F50057;
+  font-size: 19px;
+  border: 2px solid #F50057;
+}
+
+.estimatedDisplay {
+  margin: 1rem auto 1rem;
+  padding: 0 1rem;
+}
+
+@media screen and (max-width: 480px) {
+  .main {
+    display: block;
+  }
+  .main form {
+    width: 90vw;
+  }
+  .main .data {
+    margin: 2rem auto;
+  }
+  .estimatedDisplay {
+    margin: 0rem auto 1rem;
+    padding: 0 1rem;
+  }
+}
+
+#dataDisplayer {
+  width: 90%;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 8px 20px;
+  border: 2px solid red;
+  border-radius: 4px;
+}
+/*# sourceMappingURL=style.css.map */
