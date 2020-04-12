@@ -64,7 +64,7 @@ form select {
 }
 
 form button {
-  background-color: #F50057;
+  background-color: #c20045;
   border: none;
   color: white;
   font-size: 16px;
@@ -85,7 +85,7 @@ form button:hover {
 }
 
 .toEstimate {
-  background-color: #F50057;
+  background-color: #c20045;
   border: none;
   color: white;
   font-size: 16px;
