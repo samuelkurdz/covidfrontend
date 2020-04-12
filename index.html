@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> SDG FrontEnd</title>
   <meta name="description" content="Front End For the BulidForSDG Programme"/>
-  <title>Document</title>
-  <link rel="stylesheet" href="./css//style.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
@@ -14,7 +14,7 @@
   </header>
 
   <div class="main">
-    
+
     <!-- <form action="" method="post"> -->
     <form>
       <label for="population">Population</label>
@@ -40,15 +40,23 @@
     </form>
 
     <div class="data">
-      <p>This Page shows the data User is sending before sending them</p>
-      <textarea name="dataText" id="dataDisplayer" cols="30" rows="10"></textarea>
+      <h3>Confirm Your data Before Estimations</h3>
+      <textarea name="dataText" id="dataDisplayer" cols="30" rows="10" disabled></textarea>
+      <!-- Button to perform estimation -->
+      <button type="submit" class="toEstimate">Do The Estimation</button>
     </div>
   </div>
 
   <div class="estimatedDisplay">
     <p>This Segment shows the estimated results from the recieved data</p>
+    <textarea name="dataText" id="ResultDisplayer" cols="30" rows="10" disabled></textarea>
   </div>
-  
+
+  <footer>
+    <h3>
+      This BuiltForSDG Web App Was Built By <a href="https://linkedin.com/in/sambayo">Samuel Adebayo</a>
+    </h3>
+  </footer>
 
   <script src="./js/script.js"></script>
 </body>
