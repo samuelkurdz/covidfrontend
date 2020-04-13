@@ -45,7 +45,7 @@ const submitHandler = (e) => {
 
   clearFormField();
 
-  // console.log("Form Submitted", InputData);
+  console.log("Form Submitted", InputData);
 }
 
 DataButton.addEventListener('click', submitHandler);
