@@ -1,4 +1,4 @@
-console.log("App Launcehd");
+Alert('Region Data is already Assumed');
 const InputData = {};
 
 // assuming the regions
