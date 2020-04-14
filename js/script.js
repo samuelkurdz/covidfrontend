@@ -171,8 +171,6 @@ const EstimationHandler = () => {
   const resultJSON = JSON.stringify(results, undefined, 4);
   ResultDisplayer.textContent = resultJSON;
 
-  alert('Scroll Down To View The Estimations Results');
-
   // console.log(covid19ImpactEstimator(InputData));
 }
 
