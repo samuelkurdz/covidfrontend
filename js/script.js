@@ -1,4 +1,4 @@
-Alert('Region Data is already Assumed');
+alert('Values for Region Data have been assumed');
 const InputData = {};
 
 // assuming the regions
